@@ -1,7 +1,7 @@
 import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
 
-import exampleVideoData from "/compiled/src/data/exampleVideoData.js";
+import exampleVideoData from '/compiled/src/data/exampleVideoData.js';
 
 
 

@@ -7,6 +7,7 @@ var VideoList = (props) => (
       <VideoListEntry 
         key={index}
         video={video}
+        handleClick={props.handleClick}
       />
     )}
   </div>

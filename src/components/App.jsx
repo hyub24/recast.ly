@@ -1,9 +1,7 @@
 import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
 import Search from './Search.js';
-import exampleVideoData from '/compiled/src/data/exampleVideoData.js';
-
-
+//import exampleVideoData from '/compiled/src/data/exampleVideoData.js';
 
 class App extends React.Component {
 
@@ -23,9 +21,7 @@ class App extends React.Component {
   }
 
   handleKey(query) {
-    debounce(function() {
-      this.getVideos(query);
-    }, 500);
+    _.debounce(() => this.getVideos(query), 500)();
   }
 
   getVideos(query) {

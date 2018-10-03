@@ -10,7 +10,6 @@ var searchYouTube = (options, callback) => {
       videoEmbeddable: true,
       key: options.key
     },
-
     success: function(response) { callback(response.items); },
     error: function() { console.log('error'); }
   });
